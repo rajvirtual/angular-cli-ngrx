@@ -1,0 +1,13 @@
+<!--<div *ngFor="let author of authors$ | async ">
+    {{author.name}}
+</div>-->
+
+<div>
+    <span>
+        Select User:
+<select  class="form-control" (change)="onSelectAuthor($event.target.value)">
+   <option *ngFor="let author of authors$ | async" 
+       >{{author.name}}</option>
+</select> 
+    </span>
+</div>

@@ -1,0 +1,6 @@
+<div class="row">
+    <div class="col-sm-12">
+        <textarea style="width:100%" placeholder="Title" [(ngModel)]="blog.title" name="blog"></textarea>
+        <button [disabled]="filter==='All'" class="btn btn-primary" (click)="addBlog()">Add Blog</button>
+    </div>
+</div>
