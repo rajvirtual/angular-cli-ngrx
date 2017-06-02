@@ -1,94 +1,14 @@
 {
   "blogs": [
     {
-      "id": 4,
-      "title": "Blog 4",
-      "author": "John"
+      "title": "Blog Title 1",
+      "author": "John",
+      "id": 1
     },
     {
-      "id": 5,
-      "title": "Blog 5",
-      "author": "Jane"
-    },
-    {
-      "title": "New One",
-      "author": "raj",
-      "id": 6
-    },
-    {
-      "title": "Other One",
-      "author": "raj",
-      "id": 7
-    },
-    {
-      "title": "New One",
-      "author": "raj",
-      "id": 9
-    },
-    {
-      "title": "Harry's one",
-      "author": "raj",
-      "id": 10
-    },
-    {
-      "title": "New one",
-      "author": "raj",
-      "id": 11
-    },
-    {
-      "title": "New for Harry",
-      "author": "raj",
-      "id": 12
-    },
-    {
-      "title": "This one for Harry",
+      "title": "Blog Title 2",
       "author": "Harry",
-      "id": 13
-    },
-    {
-      "title": "New One for Harry",
-      "author": "Harry",
-      "id": 14
-    },
-    {
-      "title": "For John",
-      "author": "John",
-      "id": 15
-    },
-    {
-      "title": "New John",
-      "author": "John",
-      "id": 16
-    },
-    {
-      "title": "New one",
-      "author": "Jane",
-      "id": 17
-    },
-    {
-      "title": "One More",
-      "author": "Harry",
-      "id": 18
-    },
-    {
-      "title": "Good",
-      "author": "John",
-      "id": 19
-    },
-    {
-      "title": "One",
-      "author": "John",
-      "id": 20
-    },
-    {
-      "title": "Again ?",
-      "author": "John",
-      "id": 21
-    },
-    {
-      "title": "Tets",
-      "author": "John",
-      "id": 22
+      "id": 2
     }
   ],
   "authors": [
