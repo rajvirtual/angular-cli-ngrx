@@ -21,7 +21,7 @@ describe('Blog Effect', () => {
             { "provide": Http, "useValue": null }
         ]
     }));
-    it('Call LOAD_BLOGS_SUCCESS action after LOAD_BLOGS action',
+    it('Call LOAD_BLOGS_SUCCESS action after REQUEST_BLOGS action',
         inject([
             EffectsRunner, BlogEffects, BlogService
         ],
@@ -30,10 +30,11 @@ describe('Blog Effect', () => {
                 blogEffects = _tagEffects;
                 blogService = _tagService;
                 spyOn(blogService, 'loadBlogs')
-                    .and.returnValue(Observable.of(['C#']));
-                runner.queue({ type: 'LOAD_BLOGS' });
+                    .and.returnValue(Observable.of(['Blog1']));
+                runner.queue({ type: 'REQUEST_BLOGS' });
                 blogEffects.loadBlogs$.subscribe(result => {
                     expect(result.type).toEqual(BlogActions.LOAD_BLOGS_SUCCESS);
+                    expect(result.payload[0]).toEqual('Blog1');
                 });
             })
     );

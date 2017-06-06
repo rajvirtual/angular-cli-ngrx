@@ -12,8 +12,6 @@ export class BlogService {
   constructor(private http: Http) { }
 
   loadBlogs(filter): Observable<Blog[]> {
-    console.log('service ');
-    console.log(filter);
     if (!filter || filter === 'All') {
       return this.http.get(this._baseUrl + 'blogs').map(res => res.json());
     }

@@ -36,16 +36,11 @@ export class BlogSectionComponent implements OnInit {
       }
     );
 
-    //  this.blogs$ = this.store.select('blog').map((c: any) => c.data);
     this.loadBlogs();
   }
 
   loadBlogs() {
     this.store.dispatch(this.blogActions.loadBlogs('All'));
-    // this.service.loadBlogs('All').subscribe(
-    //   c => {this.store.dispatch({ type: 'LOAD_BLOGS', payload: c });
-    //   }
-    // );
   }
 
   addBlog(blog: Blog) {
