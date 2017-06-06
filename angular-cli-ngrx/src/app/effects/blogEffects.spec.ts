@@ -25,10 +25,10 @@ describe('Blog Effect', () => {
         inject([
             EffectsRunner, BlogEffects, BlogService
         ],
-            (_runner, _tagEffects, _tagService) => {
+            (_runner, _blogEffects, _blogService) => {
                 runner = _runner;
-                blogEffects = _tagEffects;
-                blogService = _tagService;
+                blogEffects = _blogEffects;
+                blogService = _blogService;
                 spyOn(blogService, 'loadBlogs')
                     .and.returnValue(Observable.of(['Blog1']));
                 runner.queue({ type: 'REQUEST_BLOGS' });
